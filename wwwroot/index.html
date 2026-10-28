@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steam Inventory Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Steam Inventory Tracker</h1>
+
+    <div class="controls">
+      <input type="text" id="steamInput" placeholder="Вставьте ссылку на профиль Steam">
+
+      <select id="rarityFilter">
+        <option value="all">Все предметы</option>
+      </select>
+
+      <button id="loadBtn" onclick="loadInventory()">Отправить</button>
+    </div>
+
+    <div id="status"></div>
+    <div id="inventory" class="grid"></div>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
